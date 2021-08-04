@@ -72,6 +72,11 @@ function sortedUnion(arr1, arr2) {
 
   //short answer using spread operator
   let uniqueArray = [...new Set([...arr1, ...arr2])];
+
+  // let firstArray = [...arr1,...arr2];
+  // let firstSet = new Set(firstArray);
+  // let finalAns  = [...firstSet];
+
   return uniqueArray.sort((a,b) => a-b);
 
 }
